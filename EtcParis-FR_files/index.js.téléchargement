@@ -1,0 +1,41 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+$(document).ready(function(){$('#reg-form_main .dropdown-toggle').click(function(){$('#reg-form_main .dropdown-menu').toggle().addClass('active');});$('#reg-form_main .dropdown-item').click(function(){$('#reg-form_main .dropdown-menu').toggle().removeClass('active');});function makePassword(){var text="";var possible="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";for(var i=0;i<10;i++)
+text+=possible.charAt(Math.floor(Math.random()*possible.length));return text;}
+$.validator.addMethod("check_number",function(value){return /\d/.test(value)===false;});$.validator.addMethod("alphanumeric",function(value,element){return this.optional(element)||/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/i.test(value);});$("#reg-form_main").validate({ignore:[],rules:{fname:{required:true,check_number:"check_number",minlength:2},lname:{required:true,check_number:"check_number",minlength:2},email:{required:true,email:true,minlength:2},selected_country:{required:true,},tel_number:{required:true,alphanumeric:true},terms:{required:true,}},messages:{fname:{required:"You need to enter your first name.",check_number:"Unless you’re related to the Musk’s, please make sure your name doesn’t have numbers in it.",minlength:"We’re sure your name has more than one letter…"},lname:{required:"You need to enter your last name.",check_number:"Unless you’re related to the Musk’s, please make sure your last name doesn’t have numbers in it.",minlength:"We’re sure your last name has more than one letter…"},email:{required:"You need to enter your email.",email:"Make sure you’ve entered your email correctly as it doesn’t look right.",minlength:"We’re sure your email has more than one letter…"},selected_country:{required:"You need to enter your country",},tel_number:{required:"You need to enter your tel number",alphanumeric:"Please enter a valid phone number with only numbers",},terms:{required:"You'll need to agree",}},errorPlacement:function(error,element){if(element.attr("name")=="terms"){error.appendTo("#messageBox");}else{error.insertAfter(element);}},submitHandler:function(form){const validator=this;const fname=$('#reg-form_main').find('input[name="fname"]').val();const lname=$('#reg-form_main').find('input[name="lname"]').val();const email=$('#reg-form_main').find('input[name="email"]').val();const country=$('#reg-form_main').find('input[name="selected_country"]').val().toUpperCase();const password=makePassword();let tel_number=$('#reg-form_main').find('input[name="tel_number"]').val();if(tel_number.includes("+")===false){tel_number=$('.iti__selected-dial-code').text()+tel_number;}
+$.ajax({type:"POST",url:"/wp-admin/admin-ajax.php",dataType:'json',data:{action:'send_callback_form_registration',formData:{fname:fname,lname:lname,email:email,country:country,tel_number:tel_number,password:password,},},beforeSend:function(){$('.spinner-border').show();},complete:function(){$('.spinner-border').hide();},success:function(data){if(data.status==1){alert('Client already exists');}
+if(data.status==0){document.location.href=data.message;}},error:function(data){alert('Client already exists');}});}});});
+
+}
+/*
+     FILE ARCHIVED ON 14:00:00 Aug 15, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:54:32 Dec 25, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 88.902
+  exclusion.robots: 0.127
+  exclusion.robots.policy: 0.116
+  cdx.remote: 0.097
+  esindex: 0.013
+  LoadShardBlock: 49.861 (3)
+  PetaboxLoader3.datanode: 49.115 (5)
+  CDXLines.iter: 26.386 (3)
+  load_resource: 42.927
+  PetaboxLoader3.resolve: 28.665
+  loaddict: 9.211
+*/

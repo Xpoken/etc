@@ -1,0 +1,43 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+$(function(){$("form .dropdown-menu").on('click','a',function(){$(".rem").text($(this).text());$(`.currency-btn`).data('currency',$(this).text());});});$('#left-nav-ul>li.menu-item-has-children>a').click(function(e){if(!$(this).parent().hasClass('active')){$('#left-nav-ul li.menu-item-has-children').removeClass('active');$(this).parent().addClass('active');e.preventDefault();let $this=$(this).next();$("#left-nav-ul>li>ul").not($this).hide();$this.toggle();}else{return true;}});$('#left-nav-ul>li>.sub-menu>li.menu-item-has-children>a').click(function(e){if(!$(this).parent().hasClass('active')){$('#left-nav-ul>li>.sub-menu>li.menu-item-has-children').removeClass('active');$(this).parent().addClass('active');e.preventDefault();let $this=$(this).next();$("#left-nav-ul>li>ul>li>ul").not($this).hide();$this.toggle();}else{return true;}});$('#language ').click(function(e){if(!$(this).parent().hasClass('active')){$('#language li').removeClass('active');$(this).parent().addClass('active');e.preventDefault();$('#language .sub-menu').show();}else{return true;}});if($.cookie('closeCook')==null){$('.cook').show();$('.closeCook').click(function(e){$.cookie('closeCook','true',{expires:30,path:'/'});$('.cook').hide();});}else{$('.cook').hide();}
+if($.cookie('closeRisk')==null){$('.risky').show();$('.closeRisk').click(function(e){$.cookie('closeRisk','true',{expires:30,path:'/'});$('.risky').hide();});}else{$('.risky').hide();}
+$('#file1').change(function(){$('.upload-doc').html('uploaded');});if($(window).width()<=991){}
+let $summit;function buildSliderConfiguration(){let windowWidth=$(window).width();let numberOfVisibleSlides;let controls;let auto;let pager;if(windowWidth<420){numberOfVisibleSlides=1;controls=true;auto=true;pager=true;}else if(windowWidth<768){numberOfVisibleSlides=1;controls=true;auto=true;pager=true;}else if(windowWidth<1399){numberOfVisibleSlides=3;controls=false;auto=true;pager=true;}else if(windowWidth<1599){numberOfVisibleSlides=4;controls=false;auto=true;pager=true;}else{numberOfVisibleSlides=5;controls=false;auto=false;pager=false;}
+return{pager:false,controls:controls,infiniteLoop:true,auto:true,slideWidth:5000,startSlide:0,adaptiveHeight:true,moveSlides:1,minSlides:numberOfVisibleSlides,maxSlides:numberOfVisibleSlides,nextText:'<img src="/wp-content/themes/igc/img/static-bar-next.png">',prevText:'<img src="/wp-content/themes/igc/img/static-bar-prev.png">'};}
+function configureSlider(){let config=buildSliderConfiguration();if($summit&&$summit.reloadSlider){$summit.reloadSlider(config);}else{$summit=$('.fixed-static-bar.icons .flex-block').bxSlider(config);}}
+$(window).on("orientationchange resize",configureSlider);configureSlider();
+
+}
+/*
+     FILE ARCHIVED ON 14:00:21 Aug 15, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:54:31 Dec 25, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 98.743
+  exclusion.robots: 0.225
+  exclusion.robots.policy: 0.208
+  cdx.remote: 0.137
+  esindex: 0.028
+  LoadShardBlock: 36.753 (3)
+  PetaboxLoader3.datanode: 36.248 (5)
+  CDXLines.iter: 18.041 (3)
+  load_resource: 76.22
+  PetaboxLoader3.resolve: 56.801
+  loaddict: 7.387
+*/

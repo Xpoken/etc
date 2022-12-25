@@ -1,0 +1,23 @@
+@media(min-width:1400px) and (max-width:1599px){.bar-pad{padding-left:85px!important}}@media(min-width:1200px) and (max-width:1399px){.bar-pad{padding-left:45px!important}}@media(max-width:1100px){.bar-pad{padding:1rem 0!important}.staticbar-position .icon-text{font-size:12px}}.static-bar-wrapper{position:fixed;bottom:50px;width:100%;z-index:999;background:#fff}.btn-primary{background:#21b8ec!important;padding:1rem;border-radius:10px;color:#fff!important;text-align:center;cursor:pointer}.btn-primary:hover{background:#21b8ec}.bar-pad{padding:.5rem 0 .5rem 80px}.staticbar-position{width:100%;max-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.staticbar-position .staticbar-image{width:200px}.staticbar-position .bar-div{margin-right:40px;width:200px}.staticbar-position .bar-div .bar-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.staticbar-position .bar-div .bar-content .icon-text{margin-left:10px;font-size:12px}.staticbar-position .staticbar-btn{width:215px;display:-webkit-box;display:-ms-flexbox;display:flex}.staticbar-position .staticbar-btn a{font-size:13px;font-weight:700}.staticbar-position .staticbar>.slick-list{height:100%}.staticbar-position .staticbar>.slick-list>.slick-track{height:100%}.staticbar-position .staticbar>.slick-list>.slick-track>li.bar-div{height:100%}.staticbar-position .staticbar>.slick-list>.slick-track>li.bar-div>.bar-content{height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.staticbar{width:90%}@media screen and (max-width:1200px){.staticbar-position{display:-webkit-box;padding-left:0!important}.staticbar-position .staticbar-image{display:none}.staticbar-position .staticbar-btn{display:none!important}}@media screen and (max-width:991px){.static-bar-wrapper{bottom:47px!important}}@media screen and (max-width:620px){.staticbar-position{display:block}.staticbar-position .staticbar{width:100%!important}.staticbar-position .staticbar .bar-div{text-align:center}.staticbar-position .staticbar .bar-div .bar-content{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.staticbar-position .staticbar-btn{margin-top:30px!important;text-align:center;width:100%!important}}
+/*
+     FILE ARCHIVED ON 14:00:23 Aug 15, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:54:20 Dec 25, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 326.879
+  exclusion.robots: 0.192
+  exclusion.robots.policy: 0.179
+  cdx.remote: 0.106
+  esindex: 0.013
+  LoadShardBlock: 137.583 (3)
+  PetaboxLoader3.datanode: 134.336 (5)
+  CDXLines.iter: 14.076 (3)
+  load_resource: 210.132
+  PetaboxLoader3.resolve: 87.808
+  loaddict: 116.231
+*/
